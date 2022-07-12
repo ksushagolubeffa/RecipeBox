@@ -91,10 +91,10 @@
         android:backgroundTint="@color/main_green"
         android:background="@drawable/rounded_bg"
         app:layout_constraintHorizontal_bias="0.84"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@id/iv_cover"
+        app:layout_constraintEnd_toEndOf="@id/iv_cover"
+        app:layout_constraintBottom_toBottomOf="@id/iv_cover"
+        app:layout_constraintTop_toTopOf="@id/iv_cover"
         app:layout_constraintVertical_bias="0.05"
         app:layout_constraintVertical_chainStyle="packed"/>
 
@@ -106,10 +106,10 @@
         android:backgroundTint="@color/main_orange"
         android:background="@drawable/rounded_bg"
         app:layout_constraintHorizontal_bias="0.955"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@id/iv_cover"
+        app:layout_constraintEnd_toEndOf="@id/iv_cover"
+        app:layout_constraintBottom_toBottomOf="@id/iv_cover"
+        app:layout_constraintTop_toTopOf="@id/iv_cover"
         app:layout_constraintVertical_bias="0.05"
         app:layout_constraintVertical_chainStyle="packed"/>
 
