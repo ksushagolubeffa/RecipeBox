@@ -54,7 +54,7 @@ class DescriptionFragment : Fragment(R.layout.fragment_description) {
                 recipeDao?.deleteRecipe(recipes)
                 try {
                     recipeDao?.deleteFavourite(recipeDao.getFavouriteByID(recipes.id))
-                    Snackbar.make(view, "Рецепт удалён", Snackbar.LENGTH_LONG).show()
+                    Snackbar.make(view, "Рецепт удалён", Snackbar.LENGTH_LONG).apply { setAnchorView(R.id.bottom_navigation) }.show()
                 } catch (e:Exception){}
             }
         }
@@ -62,11 +62,11 @@ class DescriptionFragment : Fragment(R.layout.fragment_description) {
             if(recipes != null) {
                 try {
                     recipeDao?.deleteFavourite(recipeDao.getFavouriteByID(recipes.id))
-                    Snackbar.make(view, "Рецепт удалён из избранного", Snackbar.LENGTH_LONG).show()
+                    Snackbar.make(view, "Рецепт удалён из избранного", Snackbar.LENGTH_LONG).apply { setAnchorView(R.id.bottom_navigation) }.show()
                 } catch (e: Exception) {
                     val newFavourite = Favourite(id = recipes.id)
                     recipeDao?.insertFavourite(newFavourite)
-                    Snackbar.make(view, "Рецепт добавлен в избранное", Snackbar.LENGTH_LONG).show()
+                    Snackbar.make(view, "Рецепт добавлен в избранное", Snackbar.LENGTH_LONG).apply { setAnchorView(R.id.bottom_navigation) }.show()
                 }
             }
         }

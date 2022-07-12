@@ -13,7 +13,6 @@
     android:layout_marginTop="12dp"
     android:layout_marginEnd="8dp">
 
-
     <ImageView
         android:id="@+id/iv_cover"
         android:layout_width="0dp"
@@ -23,36 +22,6 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/button_star"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:src="@drawable/starnew"
-        android:backgroundTint="@color/main_green"
-        android:background="@drawable/rounded_bg"
-        app:layout_constraintHorizontal_bias="0.84"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.05"
-        app:layout_constraintVertical_chainStyle="packed"/>
-
-    <ImageButton
-        android:id="@+id/button_trash"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:src="@drawable/bin"
-        android:backgroundTint="@color/main_orange"
-        android:background="@drawable/rounded_bg"
-        app:layout_constraintHorizontal_bias="0.955"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.05"
-        app:layout_constraintVertical_chainStyle="packed"/>
 
     <TextView
         android:id="@+id/tv_name"
@@ -113,6 +82,36 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_chainStyle="packed"
         tools:text="Ingredients" />
+
+    <ImageButton
+        android:id="@+id/button_star"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/starnew"
+        android:backgroundTint="@color/main_green"
+        android:background="@drawable/rounded_bg"
+        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintVertical_chainStyle="packed"/>
+
+    <ImageButton
+        android:id="@+id/button_trash"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/bin"
+        android:backgroundTint="@color/main_orange"
+        android:background="@drawable/rounded_bg"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintVertical_chainStyle="packed"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
