@@ -35,33 +35,16 @@
             android:layout_marginEnd="16dp"
             android:paddingStart="12sp"
             android:paddingEnd="12sp"
-            android:paddingTop="2dp"
             android:textSize="18sp"
             android:textColor="@color/black"
-            android:background="@drawable/top_rounded_bg"
+            android:background="@drawable/rounded_bg"
             android:fontFamily="sans-serif-medium"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@id/tv_genre"
+            app:layout_constraintBottom_toBottomOf="@id/iv_cover"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias=".9"
             app:layout_constraintVertical_chainStyle="packed"
-            tools:text="SeriesName" />
-
-        <TextView
-            android:id="@+id/tv_genre"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:paddingStart="12sp"
-            android:paddingEnd="12sp"
-            android:paddingBottom="2sp"
-            android:textSize="16sp"
-            android:textColor="@color/black"
-            android:background="@drawable/bottom_rounded_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_name"
-            tools:text="Genre" />
+            tools:text="Name" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
