@@ -30,7 +30,6 @@ class DescriptionFragment : Fragment(R.layout.fragment_description) {
                 .build()
                 .recipeDao()
         }
-
         val recipes: Recipes? = arguments?.let { recipeDao?.getRecipeById(it.getInt(ARG_ID)) }
 
         if (recipes != null) {
@@ -44,6 +43,13 @@ class DescriptionFragment : Fragment(R.layout.fragment_description) {
         }
         if (recipes != null) {
             binding.tvIngredients.text = recipes.ingredients
+        }
+
+        binding.buttonTrash.setOnClickListener{
+            //delete
+        }
+        binding.buttonStar.setOnClickListener{
+            //add favourite
         }
     }
 
