@@ -1,5 +1,7 @@
 package com.example.recipebox
 
+import com.example.recipebox.database.Recipes
+
 object RecipesRepository {
     val recipes = arrayListOf(
         Recipes(0,
