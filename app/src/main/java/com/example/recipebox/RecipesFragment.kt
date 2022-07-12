@@ -45,4 +45,8 @@ class RecipesFragment : Fragment(R.layout.fragment_recipes) {
         _binding = null
     }
 
+    fun addToFavourite(){
+
+    }
+
 }
