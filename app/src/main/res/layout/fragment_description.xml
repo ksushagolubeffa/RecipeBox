@@ -28,44 +28,28 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
         android:paddingStart="12sp"
         android:paddingEnd="12sp"
-        android:paddingTop="2dp"
+        android:paddingTop="4sp"
+        android:paddingBottom="4sp"
         android:textSize="16sp"
         android:textColor="@color/black"
-        android:background="@drawable/top_rounded_bg"
+        android:background="@drawable/rounded_bg"
         android:fontFamily="sans-serif-medium"
         app:layout_constraintTop_toBottomOf="@id/iv_cover"
         app:layout_constraintVertical_bias="0.1"
-        app:layout_constraintBottom_toTopOf="@id/tv_genre"
+        app:layout_constraintBottom_toTopOf="@id/tv_description"
         app:layout_constraintVertical_chainStyle="packed"
-        tools:text="SeriesName" />
-
-    <TextView
-        android:id="@+id/tv_genre"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:paddingStart="12sp"
-        android:paddingEnd="12sp"
-        android:paddingBottom="2sp"
-        android:textSize="16sp"
-        android:textColor="@color/black"
-        android:background="@drawable/bottom_rounded_bg"
-        android:fontFamily="sans-serif-medium"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_name"
-        app:layout_constraintVertical_chainStyle="packed"
-        tools:text="Genre" />
+        tools:text="Name" />
 
     <TextView
         android:id="@+id/tv_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
         android:paddingStart="12sp"
         android:paddingEnd="12sp"
         android:paddingTop="4sp"
@@ -74,12 +58,12 @@
         android:textColor="@color/black"
         android:background="@drawable/rounded_bg"
         android:fontFamily="sans-serif-medium"
-        app:layout_constraintTop_toBottomOf="@id/tv_year"
-        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintBottom_toTopOf="@id/tv_ingredients"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
         tools:text="Description" />
 
     <TextView
-        android:id="@+id/tv_year"
+        android:id="@+id/tv_ingredients"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
@@ -93,9 +77,10 @@
         android:textColor="@color/black"
         android:background="@drawable/rounded_bg"
         android:fontFamily="sans-serif-medium"
-        app:layout_constraintTop_toBottomOf="@id/tv_genre"
+        app:layout_constraintTop_toBottomOf="@id/tv_description"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_chainStyle="packed"
-        tools:text="Year" />
+        tools:text="Ingredients" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

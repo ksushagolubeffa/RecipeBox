@@ -28,8 +28,8 @@ class DescriptionFragment : Fragment(R.layout.fragment_description) {
 
         Glide.with(this).load(recipes.url).into(binding.ivCover)
         binding.tvName.text = recipes.name
-        binding.tvGenre.text = recipes.description
-        binding.tvYear.text = recipes.ingredients
+        binding.tvDescription.text = recipes.description
+        binding.tvIngredients.text = recipes.ingredients
     }
 
     override fun onDestroyView() {
