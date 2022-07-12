@@ -3,6 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
+        <entry key="..\:/Users/Ilya/AndroidStudioProjects/RecipeBox/app/src/main/res/layout/activity_add.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Ilya/AndroidStudioProjects/RecipeBox/app/src/main/res/layout/activity_add_edit.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Ilya/AndroidStudioProjects/RecipeBox/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Ilya/AndroidStudioProjects/RecipeBox/app/src/main/res/layout/fragment_add.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Ilya/AndroidStudioProjects/RecipeBox/app/src/main/res/layout/fragment_description.xml" value="0.4" />
+        <entry key="..\:/Users/Ilya/AndroidStudioProjects/RecipeBox/app/src/main/res/layout/fragment_favorite.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/Ilya/AndroidStudioProjects/RecipeBox/app/src/main/res/layout/fragment_recipes.xml" value="0.264" />
+        <entry key="..\:/Users/Ilya/AndroidStudioProjects/RecipeBox/app/src/main/res/layout/item_recipes.xml" value="0.264" />
+=======
         <entry key="..\:/Users/ASUS/Documents/GitHub/RecipeBox/app/src/main/res/drawable/top_rounded_bg.xml" value="0.1315" />
         <entry key="..\:/Users/ASUS/Documents/GitHub/RecipeBox/app/src/main/res/layout/fragment_description.xml" value="0.1796875" />
         <entry key="..\:/Users/ASUS/Documents/GitHub/RecipeBox/app/src/main/res/layout/fragment_favorite.xml" value="0.1796875" />
@@ -14,6 +24,7 @@
         <entry key="..\:/Users/Ilya/AndroidStudioProjects/RecipeBox/app/src/main/res/layout/fragment_favorite.xml" value="0.11302083333333333" />
         <entry key="..\:/Users/Ilya/AndroidStudioProjects/RecipeBox/app/src/main/res/layout/fragment_recipes.xml" value="0.11302083333333333" />
         <entry key="..\:/Users/Ilya/AndroidStudioProjects/RecipeBox/app/src/main/res/layout/item_recipes.xml" value="0.11302083333333333" />
+>>>>>>> origin/main
         <entry key="..\:/Users/Ilya/AndroidStudioProjects/RecipeBox/app/src/main/res/menu/menu_main.xml" value="0.25416666666666665" />
       </map>
     </option>
