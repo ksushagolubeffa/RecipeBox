@@ -7,6 +7,7 @@ import androidx.room.Room
 import com.example.recipebox.database.AppDatabase
 import com.example.recipebox.database.Recipes
 import com.example.recipebox.databinding.FragmentAddBinding
+import com.google.android.material.snackbar.Snackbar
 
 class AddFragment: Fragment(R.layout.fragment_add) {
 
@@ -23,7 +24,7 @@ class AddFragment: Fragment(R.layout.fragment_add) {
                 addToBase(editText.text.toString(),editText2.text.toString(),
                     editText3.text.toString(),editText4.text.toString())
             }
-
+            Snackbar.make(view, "Рецепт успешно сохранен!", Snackbar.LENGTH_LONG).show()
         }
     }
 
