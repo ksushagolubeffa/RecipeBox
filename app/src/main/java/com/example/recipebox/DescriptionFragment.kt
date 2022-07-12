@@ -8,8 +8,11 @@ import androidx.fragment.app.Fragment
 import androidx.room.Room
 import com.bumptech.glide.Glide
 import com.example.recipebox.database.AppDatabase
+import com.example.recipebox.database.Favourite
 import com.example.recipebox.database.Recipes
 import com.example.recipebox.databinding.FragmentDescriptionBinding
+import com.google.android.material.snackbar.Snackbar
+import java.lang.Exception
 
 class DescriptionFragment : Fragment(R.layout.fragment_description) {
 
@@ -47,9 +50,25 @@ class DescriptionFragment : Fragment(R.layout.fragment_description) {
 
         binding.buttonTrash.setOnClickListener{
             //delete
+            if (recipes != null) {
+                recipeDao?.deleteRecipe(recipes)
+                try {
+                    recipeDao?.deleteFavourite(recipeDao.getFavouriteByID(recipes.id))
+                    Snackbar.make(view, "Рецепт удалён", Snackbar.LENGTH_LONG).show()
+                } catch (e:Exception){}
+            }
         }
         binding.buttonStar.setOnClickListener{
-            //add favourite
+            if(recipes != null) {
+                try {
+                    recipeDao?.deleteFavourite(recipeDao.getFavouriteByID(recipes.id))
+                    Snackbar.make(view, "Рецепт удалён из избранного", Snackbar.LENGTH_LONG).show()
+                } catch (e: Exception) {
+                    val newFavourite = Favourite(id = recipes.id)
+                    recipeDao?.insertFavourite(newFavourite)
+                    Snackbar.make(view, "Рецепт добавлен в избранное", Snackbar.LENGTH_LONG).show()
+                }
+            }
         }
     }
 
