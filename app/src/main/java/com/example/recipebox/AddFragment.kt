@@ -18,7 +18,16 @@ class AddFragment: Fragment(R.layout.fragment_add) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentAddBinding.bind(view)
+        binding.bottomAdd.setOnClickListener{
+            with(binding) {
+                addToBase(editText.text.toString(),editText2.text.toString(),
+                    editText3.text.toString(),editText4.text.toString())
+            }
+
+        }
     }
+
+
 
     private fun addToBase(
         nameGet: String,
