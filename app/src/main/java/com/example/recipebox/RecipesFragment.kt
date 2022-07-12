@@ -29,7 +29,7 @@ class RecipesFragment : Fragment(R.layout.fragment_recipes) {
         }
 
         if (recipeDao != null) {
-            adapter = RecipesAdapter(recipeDao.getAllRecipes(), Glide.with(this)) { id ->
+            adapter = RecipesAdapter(RecipesRepository.recipes, Glide.with(this)) { id ->
                 findNavController().navigate(
                     R.id.action_recipesFragment_to_descriptionFragment,
                     DescriptionFragment.createBundle(id)
