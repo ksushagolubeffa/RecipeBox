@@ -4,7 +4,9 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import androidx.room.Room
 import com.bumptech.glide.Glide
+import com.example.recipebox.database.AppDatabase
 import com.example.recipebox.databinding.FragmentRecipesBinding
 
 class RecipesFragment : Fragment(R.layout.fragment_recipes) {
@@ -19,11 +21,20 @@ class RecipesFragment : Fragment(R.layout.fragment_recipes) {
 
         _binding = FragmentRecipesBinding.bind(view)
 
-        adapter = RecipesAdapter(RecipesRepository.recipes, Glide.with(this)) { id ->
-            findNavController().navigate(
-                R.id.action_recipesFragment_to_descriptionFragment,
-                DescriptionFragment.createBundle(id)
-            )
+        val recipeDao = context?.let {
+            Room.databaseBuilder(it, AppDatabase::class.java, "database-name")
+                .allowMainThreadQueries()
+                .build()
+                .recipeDao()
+        }
+
+        if (recipeDao != null) {
+            adapter = RecipesAdapter(recipeDao.getAllRecipes(), Glide.with(this)) { id ->
+                findNavController().navigate(
+                    R.id.action_recipesFragment_to_descriptionFragment,
+                    DescriptionFragment.createBundle(id)
+                )
+            }
         }
 
         binding.rvSeries.adapter = adapter
