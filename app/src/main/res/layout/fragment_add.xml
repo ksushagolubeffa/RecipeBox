@@ -50,10 +50,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:id="@+id/bottom_add"
         android:layout_width="200dp"
         android:layout_height="100dp"
         android:text="Добавить"
         android:textSize="25dp"
+        android:background="@drawable/rounded_bg"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintVertical_bias="0.3"
