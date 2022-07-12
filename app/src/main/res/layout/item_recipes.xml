@@ -31,7 +31,8 @@
         <ImageButton
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/star"
+            android:src="@drawable/starnew"
+            android:backgroundTint="@color/main_green"
             android:background="@drawable/rounded_bg"
             app:layout_constraintHorizontal_bias="0.955"
             app:layout_constraintStart_toStartOf="parent"
@@ -63,7 +64,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias=".9"
             app:layout_constraintVertical_chainStyle="packed"
-            tools:text="SeriesName" />
+            tools:text="Name" />
 
 
 
