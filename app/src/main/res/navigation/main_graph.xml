@@ -15,10 +15,10 @@
             app:destination="@id/recipesFragment" />
     </fragment>
     <fragment
-        tools:layout="@layout/activity_add_edit"
-        android:id="@+id/addActivity"
-        android:name="com.example.recipebox.AddActivity"
-        android:label="AddActivity" />
+        tools:layout="@layout/fragment_add"
+        android:id="@+id/addFragment"
+        android:name="com.example.recipebox.AddFragment"
+        android:label="AddFragment" />
     <fragment
         tools:layout="@layout/fragment_favorite"
         android:id="@+id/favoriteFragment"
