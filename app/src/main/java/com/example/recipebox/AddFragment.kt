@@ -24,7 +24,7 @@ class AddFragment: Fragment(R.layout.fragment_add) {
                 addToBase(editText.text.toString(),editText2.text.toString(),
                     editText3.text.toString(),editText4.text.toString())
             }
-            Snackbar.make(view, "Рецепт успешно сохранен!", Snackbar.LENGTH_LONG).show()
+            Snackbar.make(view, "Рецепт успешно сохранен!", Snackbar.LENGTH_LONG).apply { setAnchorView(R.id.bottom_navigation) }.show()
         }
     }
 

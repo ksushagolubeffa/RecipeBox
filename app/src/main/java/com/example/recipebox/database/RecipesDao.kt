@@ -27,4 +27,10 @@ interface RecipeDao {
 
     @Delete
     fun deleteFavourite(favourite: Favourite)
+
+    @Query("DELETE FROM recipes_table")
+    fun deleteAllRecipes()
+
+    @Query("DELETE FROM favourite_table")
+    fun deleteAllFavourites()
 }
