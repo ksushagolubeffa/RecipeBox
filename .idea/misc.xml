@@ -3,33 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-<<<<<<< HEAD
-        <entry key="..\:/Users/1/Documents/GitHub/RecipeBox/app/src/main/res/drawable/bottom_rounded_bg.xml" value="0.1" />
-        <entry key="..\:/Users/1/Documents/GitHub/RecipeBox/app/src/main/res/drawable/euro_rating_bar.xml" value="0.1" />
-        <entry key="..\:/Users/1/Documents/GitHub/RecipeBox/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.1" />
-        <entry key="..\:/Users/1/Documents/GitHub/RecipeBox/app/src/main/res/drawable/ic_baseline_delete_forever_24.xml" value="0.1" />
-        <entry key="..\:/Users/1/Documents/GitHub/RecipeBox/app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.1" />
-        <entry key="..\:/Users/1/Documents/GitHub/RecipeBox/app/src/main/res/drawable/ic_baseline_remove_24.xml" value="0.1" />
-        <entry key="..\:/Users/1/Documents/GitHub/RecipeBox/app/src/main/res/drawable/ic_search_black_24dp.xml" value="0.1" />
-        <entry key="..\:/Users/1/Documents/GitHub/RecipeBox/app/src/main/res/layout/activity_add.xml" value="0.14666666666666667" />
-        <entry key="..\:/Users/1/Documents/GitHub/RecipeBox/app/src/main/res/layout/activity_add_edit.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/1/Documents/GitHub/RecipeBox/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
-        <entry key="..\:/Users/1/Documents/GitHub/RecipeBox/app/src/main/res/layout/fragment_add.xml" value="0.1796875" />
-        <entry key="..\:/Users/1/Documents/GitHub/RecipeBox/app/src/main/res/layout/fragment_description.xml" value="0.22" />
-        <entry key="..\:/Users/1/Documents/GitHub/RecipeBox/app/src/main/res/layout/fragment_favorite.xml" value="0.1796875" />
-        <entry key="..\:/Users/1/Documents/GitHub/RecipeBox/app/src/main/res/layout/fragment_recipes.xml" value="0.1796875" />
-        <entry key="..\:/Users/1/Documents/GitHub/RecipeBox/app/src/main/res/layout/item_recipes.xml" value="0.1" />
-        <entry key="..\:/Users/1/Documents/GitHub/RecipeBox/app/src/main/res/menu/menu_main.xml" value="0.1796875" />
+        <entry key="..\:/Users/ASUS/Documents/GitHub/RecipeBox/app/src/main/res/drawable/top_rounded_bg.xml" value="0.1315" />
+        <entry key="..\:/Users/ASUS/Documents/GitHub/RecipeBox/app/src/main/res/layout/fragment_description.xml" value="0.1796875" />
+        <entry key="..\:/Users/ASUS/Documents/GitHub/RecipeBox/app/src/main/res/layout/fragment_favorite.xml" value="0.1796875" />
+        <entry key="..\:/Users/ASUS/Documents/GitHub/RecipeBox/app/src/main/res/layout/fragment_recipes.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/ASUS/Documents/GitHub/RecipeBox/app/src/main/res/layout/item_recipes.xml" value="0.41811175337186895" />
         <entry key="..\:/Users/Ilya/AndroidStudioProjects/RecipeBox/app/src/main/res/layout/activity_main.xml" value="0.11302083333333333" />
         <entry key="..\:/Users/Ilya/AndroidStudioProjects/RecipeBox/app/src/main/res/layout/fragment_add.xml" value="0.25416666666666665" />
-=======
-        <entry key="..\:/Users/Ilya/AndroidStudioProjects/RecipeBox/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/Users/Ilya/AndroidStudioProjects/RecipeBox/app/src/main/res/layout/fragment_add.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Ilya/AndroidStudioProjects/RecipeBox/app/src/main/res/layout/fragment_description.xml" value="0.4" />
->>>>>>> 0527d9a51a9bf786d4e7fe0dfd7082e1ef2a0ffb
+        <entry key="..\:/Users/Ilya/AndroidStudioProjects/RecipeBox/app/src/main/res/layout/fragment_description.xml" value="0.11302083333333333" />
         <entry key="..\:/Users/Ilya/AndroidStudioProjects/RecipeBox/app/src/main/res/layout/fragment_favorite.xml" value="0.11302083333333333" />
-        <entry key="..\:/Users/Ilya/AndroidStudioProjects/RecipeBox/app/src/main/res/layout/fragment_recipes.xml" value="0.264" />
-        <entry key="..\:/Users/Ilya/AndroidStudioProjects/RecipeBox/app/src/main/res/layout/item_recipes.xml" value="0.264" />
+        <entry key="..\:/Users/Ilya/AndroidStudioProjects/RecipeBox/app/src/main/res/layout/fragment_recipes.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/Ilya/AndroidStudioProjects/RecipeBox/app/src/main/res/layout/item_recipes.xml" value="0.11302083333333333" />
         <entry key="..\:/Users/Ilya/AndroidStudioProjects/RecipeBox/app/src/main/res/menu/menu_main.xml" value="0.25416666666666665" />
       </map>
     </option>
