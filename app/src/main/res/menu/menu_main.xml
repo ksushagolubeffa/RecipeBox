@@ -12,7 +12,7 @@
         android:title="@string/menu_favorite"/>
 
     <item
-        android:id="@+id/addFragment"
+        android:id="@+id/addActivity"
         android:enabled="true"
         android:icon="@drawable/plus"
         android:title="@string/menu_add_recipe"/>

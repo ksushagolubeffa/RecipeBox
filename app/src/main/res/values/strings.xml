@@ -3,4 +3,77 @@
     <string name="menu_recipes">Книга рецептов</string>
     <string name="menu_favorite">Избранное</string>
     <string name="menu_add_recipe">Добавить рецепт</string>
+
+
+    // Кнопки меню
+    <string name="action_edit">Изменить</string>
+    <string name="action_search">Поиск</string>
+    <string name="action_delete">Удалить</string>
+    <string name="search_bar_hint">Что мы готовим?</string>
+
+    // Если книга пустая
+    <string name="example_title">Пустая книга</string>
+    <string name="example_total_time">0ч00</string>
+    <string name="example_people">0 персон</string>
+    <string name="example_price">₽₽₽</string>
+    <string name="example_ingredients">Здесь еще нет рецептов \nДобавь новый!</string>
+    <string name="example_steps">Нажми на кнопку с +, чтобы создать новый рецепт</string>
+    <string name="example_preparation_time">Время подготовки: 0ч00</string>
+    <string name="example_cooking_time">Время готовки: 0ч00</string>
+
+    // Main Activity
+    <string name="ingredients_title">Ингредиенты</string>
+    <string name="steps_title">Шаги</string>
+    <string name="duration_title">Длительность</string>
+    <string name="next_button">Вперед</string>
+    <string name="previous_button">Назад</string>
+    <string name="text_prepa_time">• Время подговки: </string>
+    <string name="text_cooking_time">• Время готовки: </string>
+    <string name="text_people"> персоны</string>
+    <string name="text_price">₽</string>
+    <string name="delete_recipe_title">Удалить рецепт</string>
+    <string name="delete_recipe_message">Вы уверены?</string>
+    <string name="confirm_delete">Удалить</string>
+    <string name="cancel_delete">Отменить</string>
+
+
+    // Add Activity
+    <string name="add_activity_title">Добавить новый рецепт</string>
+    <string name="add_title">Название :</string>
+    <string name="add_insert_title">Лазанья</string>
+    <string name="add_ingredients">Ингредиенты :</string>
+    <string name="hint_ingredients">500гр спагеттей</string>
+    <string name="add_steps">Шаги :</string>
+    <string name="hint_steps">Разогрейте духовку до 180 градусов</string>
+    <string name="add_people">Количество \nперсон :</string>
+    <string name="add_people_starting_value">1</string>
+    <string name="add_duration">Длительность :</string>
+    <string name="add_preparation_time">Время подготовки :</string>
+    <string name="add_cooking_time">Время готовки :</string>
+    <string name="add_hour">ч</string>
+    <string name="add_minutes">мин</string>
+    <string name="add_hint_time">00</string>
+    <string name="add_price">Цена :</string>
+    <string name="add_confirm_button">Подтвердить</string>
+    <string name="prefix_ingredients_steps">• </string>
+
+
+    // Edit Activity
+    <string name="edit_activity_title">Изменить рецепт</string>
+
+
+    // Ошибки
+    <string name="empty_title">Вы должны ввести название</string>
+    <string name="empty_ingredients">Вы должны ввести хотя бы один ингредиент</string>
+    <string name="empty_steps">Вы должны ввести хотя бы один шаг</string>
+    <string name="search_no_result">Ничего не найдено</string>
+    <string name="nothing_to_delete">Ваша книга уже пуста</string>
+    <string name="nothing_to_edit">Нечего редактировать, книга пуста</string>
+    <string name="edit_error_launching">Невозможно редактировать.</string>
+
+
+    // Другое
+    <string name="not_implemented_yet">Еще не реализовано</string>
+    <string name="button_plus_content_description">Добавить</string>
+    <string name="button_minus_content_description">Убрать</string>
 </resources>
