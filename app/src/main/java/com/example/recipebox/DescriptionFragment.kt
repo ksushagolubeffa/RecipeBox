@@ -7,11 +7,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.room.Room
 import com.bumptech.glide.Glide
-import com.example.recipebox.RecipesRepository.recipes
 import com.example.recipebox.database.AppDatabase
 import com.example.recipebox.database.Recipes
 import com.example.recipebox.databinding.FragmentDescriptionBinding
-import java.lang.Exception
 
 class DescriptionFragment : Fragment(R.layout.fragment_description) {
 
@@ -33,7 +31,8 @@ class DescriptionFragment : Fragment(R.layout.fragment_description) {
                 .recipeDao()
         }
 
-        val recipes: Recipes? = recipeDao?.getRecipeById(ID)
+        val recipes: Recipes? = arguments?.let { recipeDao?.getRecipeById(it.getInt(ARG_ID)) }
+
         if (recipes != null) {
             Glide.with(this).load(recipes.url).into(binding.ivCover)
         }
@@ -60,7 +59,5 @@ class DescriptionFragment : Fragment(R.layout.fragment_description) {
         fun createBundle(id: Int) = Bundle().apply {
             putInt(ARG_ID, id)
         }
-
-        private val ID get() = ARG_ID.toInt()
     }
 }
