@@ -7,6 +7,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.room.Room
 import com.bumptech.glide.Glide
 import com.example.recipebox.database.AppDatabase
+import com.example.recipebox.database.Favourite
 import com.example.recipebox.database.Recipes
 import com.example.recipebox.databinding.FragmentFavoriteBinding
 
@@ -30,7 +31,7 @@ class FavoriteFragment : Fragment(R.layout.fragment_favorite) {
         }
 
         if (recipeDao != null) {
-            adapter = RecipesAdapter(recipeDao.getAllRecipes(), Glide.with(this)) { id ->
+            adapter = RecipesAdapter(recipeDao.getAllFavourite().map { Favourite -> recipeDao.getRecipeById(Favourite.id) }, Glide.with(this)) { id ->
                 findNavController().navigate(
                     R.id.action_favoriteFragment_to_descriptionFragment,
                     DescriptionFragment.createBundle(id)
