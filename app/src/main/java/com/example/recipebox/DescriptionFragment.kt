@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
+import com.example.recipebox.database.Recipes
 import com.example.recipebox.databinding.FragmentDescriptionBinding
 
 class DescriptionFragment : Fragment(R.layout.fragment_description) {
