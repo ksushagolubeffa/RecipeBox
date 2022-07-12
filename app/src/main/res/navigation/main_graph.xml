@@ -13,17 +13,24 @@
         <action
             android:id="@+id/action_descriptionFragment_to_recipesFragment"
             app:destination="@id/recipesFragment" />
+        <action
+            android:id="@+id/action_descriptionFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
     </fragment>
     <fragment
-        tools:layout="@layout/activity_add_edit"
-        android:id="@+id/addActivity"
-        android:name="com.example.recipebox.AddActivity"
-        android:label="AddActivity" />
+        tools:layout="@layout/fragment_add"
+        android:id="@+id/addFragment"
+        android:name="com.example.recipebox.AddFragment"
+        android:label="AddFragment" />
     <fragment
         tools:layout="@layout/fragment_favorite"
         android:id="@+id/favoriteFragment"
         android:name="com.example.recipebox.FavoriteFragment"
-        android:label="FavoriteFragment" />
+        android:label="FavoriteFragment" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_descriptionFragment"
+            app:destination="@id/descriptionFragment" />
+    </fragment>
     <fragment
         tools:layout="@layout/fragment_recipes"
         android:id="@+id/recipesFragment"
